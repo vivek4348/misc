@@ -16,10 +16,10 @@ public class MemLeakLongLivedShortLived {
 				memLeakLongLivedShortLived.startTransacton();
 			}
 	}
- 
+	List<String> listIDs = new ArrayList<String>();
   	  	
   	public void startTransacton() {
-  		List<String> listIDs = new ArrayList<String>();
+  		//List<String> listIDs = new ArrayList<String>();
         	String transactonID = generateUniqueTransactionID();
         	listIDs.add(transactonID);   //Keeping short lived object (transactionID) in long lived object (listIDS) causes memory leak
   	}   	
