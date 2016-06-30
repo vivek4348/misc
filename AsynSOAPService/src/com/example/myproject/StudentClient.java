@@ -27,6 +27,7 @@ public final class StudentClient {
         System.out.println("Invoking changeStudentAsync using callback object...");
         Future<?> response = client.changeStudentAsync(
                 System.getProperty("user.name"), testAsyncHandler);
+        System.out.println("Asyn Response Immediate..");
         while (!response.isDone()) {
             Thread.sleep(100);
         }
