@@ -2,7 +2,7 @@
 public class DaemonTest {
 
     public static void main(String[] args) {
-        new WorkerThread().start();
+        new WorkerThread1().start();
 
         try {
             Thread.sleep(7500);
@@ -15,9 +15,9 @@ public class DaemonTest {
 
 }
 
-class WorkerThread extends Thread {
+class WorkerThread1 extends Thread {
 
-    public WorkerThread() {
+    public WorkerThread1() {
         // When false, (i.e. when it's a user thread),
         // the Worker thread continues to run.
         // When true, (i.e. when it's a daemon thread),
