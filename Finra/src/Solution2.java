@@ -17,6 +17,8 @@ public class Solution2 {
 		long startTime = System.currentTimeMillis();
 		System.out.println(letterCombinations("623").size());
 		System.out.println("The Total Time Taken is :" + (System.currentTimeMillis() - startTime));
+		
+		// Branch 1
 
 	}
 	
